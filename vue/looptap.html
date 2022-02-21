@@ -145,7 +145,7 @@
                 v-bind:stroke="colors[Math.floor(score / 10)] || colors[Math.floor((score - 270) / 10)] || '#bdc3c7'"
                 stroke-width="10" stroke-linejoin="round" stroke-linecap="round" v-bind:d="arcDValue" />
             <circle id="ball" cx="50" cy="50" r="4" fill="#2C3D51" v-bind:class="state"
-                v-bind:style="'animation-duration: '+(2000 - taps * 5) + 'ms'" />
+                v-bind:style="'animation-duration: '+(2000 - taps * 50) + 'ms'" />
             <polygon id="play" points="45,45 55,50 45,55" fill="#2C3D51" stroke="#2C3D51" stroke-width="5"
                 stroke-linejoin="round" stroke-linecap="round" v-if="state !== 'started'" v-on:click="startPlay" />
         </svg>
@@ -176,35 +176,20 @@
             state: "init",
             prevTapTime: 0,
             colors: [
-                "#ED5565",
-                "#D9444F",
-                "#ED5F56",
-                "#DA4C43",
-                "#F87D52",
-                "#E7663F",
-                "#FAB153",
-                "#F59B43",
-                "#FDCE55",
-                "#F6BA43",
-                "#C2D568",
-                "#B1C353",
-                "#99D469",
-                "#83C251",
-                "#42CB70",
-                "#3CB85D",
-                "#47CEC0",
-                "#3BBEB0",
-                "#4FC2E7",
-                "#3CB2D9",
-                "#5C9DED",
-                "#4C8CDC",
-                "#9398EC",
-                "#7277D5",
-                "#CC93EF",
-                "#B377D9",
-                "#ED87BF",
-                "#D870AE",
-            ],
+				'#F26D22',
+				'#F1B21D',
+				'#ECE82F',
+				'#AED136',
+				'#7EC242',
+				'#63BC46',
+				'#65BD5D',
+				'#64C29A',
+				'#61C8D2',
+				'#2DAAE1',
+				'#456EB5',
+				'#4451A3',
+				'#6151A2'
+			]
         },
         computed: {
             arcDValue: function () {
