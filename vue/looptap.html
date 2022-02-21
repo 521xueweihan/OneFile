@@ -145,7 +145,7 @@
                 v-bind:stroke="colors[Math.floor(score / 10)] || colors[Math.floor((score - 270) / 10)] || '#bdc3c7'"
                 stroke-width="10" stroke-linejoin="round" stroke-linecap="round" v-bind:d="arcDValue" />
             <circle id="ball" cx="50" cy="50" r="4" fill="#2C3D51" v-bind:class="state"
-                v-bind:style="'animation-duration: '+(2000 - taps * 50) + 'ms'" />
+                v-bind:style="'animation-duration: '+(2000 - taps * 40) + 'ms'" />
             <polygon id="play" points="45,45 55,50 45,55" fill="#2C3D51" stroke="#2C3D51" stroke-width="5"
                 stroke-linejoin="round" stroke-linecap="round" v-if="state !== 'started'" v-on:click="startPlay" />
         </svg>
@@ -158,10 +158,8 @@
         </a>
         <div id="about" v-if="state === 'init'">
             Looptap 作者：
-            <a href="https://vasanthv.com" target="_blank">Vasanth.V</a><br />
-            灵感来自 iOS 游戏
-            <a href="https://coogyloop.com/" target="_blank">Coogyloop</a>
-
+            <a href="https://github.com/vasanthv/looptap" target="_blank">Vasanth.V</a><br />
+            灵感来自 iOS 游戏 Coogyloop
         </div>
     </section>
 </body>
@@ -176,20 +174,20 @@
             state: "init",
             prevTapTime: 0,
             colors: [
-				'#F26D22',
-				'#F1B21D',
-				'#ECE82F',
-				'#AED136',
-				'#7EC242',
-				'#63BC46',
-				'#65BD5D',
-				'#64C29A',
-				'#61C8D2',
-				'#2DAAE1',
-				'#456EB5',
-				'#4451A3',
-				'#6151A2'
-			]
+                '#F26D22',
+                '#F1B21D',
+                '#ECE82F',
+                '#AED136',
+                '#7EC242',
+                '#63BC46',
+                '#65BD5D',
+                '#64C29A',
+                '#61C8D2',
+                '#2DAAE1',
+                '#456EB5',
+                '#4451A3',
+                '#6151A2'
+            ]
         },
         computed: {
             arcDValue: function () {
@@ -293,6 +291,3 @@
 </script>
 
 </html>
-
-
-
