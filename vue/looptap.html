@@ -6,18 +6,16 @@
     <meta name="author" content="Vasanth.V" />
     <meta name="theme-color" content="#FFFFFF" />
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-808W2KRQ1P"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() { dataLayer.push(arguments); }
-            gtag('js', new Date());
-    
-            gtag('config', 'G-808W2KRQ1P');
-        </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-808W2KRQ1P"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="icon" href="favicon.ico" />
+        gtag('config', 'G-808W2KRQ1P');
+    </script>
+
     <title>Looptap - 消磨时间的小游戏</title>
 
     <script src="https://looptap.vasanthv.com/vue.min.js"></script>
@@ -166,7 +164,7 @@
             分享你的分数
         </a>
         <div id="about" v-if="state === 'init'">
-            Looptap 作者：
+            源码：
             <a href="https://github.com/vasanthv/looptap" target="_blank">Vasanth.V</a><br />
             灵感来自 iOS 游戏 Coogyloop
         </div>
