@@ -2,7 +2,13 @@
 
 <p align="center">
   <img src="https://cdn.jsdelivr.net/gh/521xueweihan/img_logo@main/logo/onefile.png"/>
-  <br>写有趣的代码，然后惊艳所有人！
+  <br>用一个文件，惊艳所有人！
+</p>
+
+<p align="center">
+  <a href="https://cdn.jsdelivr.net/gh/521xueweihan/img_logo@main/logo/weixin.png"><img src="https://img.shields.io/badge/Talk-%E5%BE%AE%E4%BF%A1%E7%BE%A4-brightgreen.svg?style=popout-square" alt="WeiXin"></a>
+  <a href="https://github.com/521xueweihan/OneFile/stargazers"><img src="https://img.shields.io/github/stars/521xueweihan/OneFile.svg?style=popout-square" alt="GitHub stars"></a>
+  <a href="https://weibo.com/hellogithub"><img src="https://img.shields.io/badge/%E6%96%B0%E6%B5%AA-Weibo-red.svg?style=popout-square" alt="Sina Weibo"></a>
 </p>
 
 你是否还记得刚学会编程基础，想动手写个实用工具，但却发现还要继续学习数据库、框架、Linux 等知识？又或者看到一个好玩的开源项目结果卡在了部署环境、安装依赖的步骤上？
@@ -18,12 +24,12 @@
 加入 OneFile 编程挑战，写你感兴趣的代码，用代码为迷茫的新手指点迷津。 
 
 
-## 介绍
-这里将展示上述挑战的作品和网上收集来的单文件开源项目。
-
-一个文件能写个啥？游戏、编译器、服务器、工具、实用库应有尽有，总有一个命中你的技术栈！复制代码就能运行！
-
 ## 内容
+在这里将展示上述挑战的作品和网上收集来的单文件开源项目。
+
+一个文件能写个啥？游戏、编译器、服务器、工具、实用库应有尽有，总有一个命中你的技术栈，而且复制代码就能运行！
+
+### 展示
 
 | 名称 | 语言 | 描述 | 是否有依赖 | 操作 |
 | --- | --- | ---- | -------- | ---- |
