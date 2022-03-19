@@ -7,4 +7,4 @@ log {
                 roll_keep_for 48h
         }
 }
-root * /home/ubuntu/OneFile
+root * /home/ubuntu/OneFile/src
