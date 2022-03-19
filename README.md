@@ -25,7 +25,7 @@
 
 如果让你只用一个文件展示“平生所学”，编程语言不限！你会交出什么样的作品呢？
 
-[加入 OneFile 编程挑战](./doc/join.md)，写你感兴趣的代码，用一个文件惊艳所有人！
+[加入 OneFile 编程挑战](https://github.com/521xueweihan/OneFile/blob/main/doc/join.md)，写你感兴趣的代码，用一个文件惊艳所有人！
 
 ## 项目
 
@@ -48,6 +48,7 @@
 | [neofetch](https://github.com/dylanaraps/neofetch) | Shell | 展示操作系统信息的命令行工具，支持 100 多种操... | [dylanaraps](https://github.com/dylanaraps) | [查看](https://one.hellogithub.com/shell/neofetch.html) |
 
 
+[点击](https://hellogithub.yuque.com/forms/share/4f0bf06b-2991-4f7e-a860-5b76337b7b5b) 提交项目。
 
 ## 更新计划
 
@@ -55,8 +56,6 @@
 - 自动化流程
 - 增设奖金
 - 英文描述
-
-
 
 ## 声明
 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh"><img alt="知识共享许可协议" style="border-width: 0" src="https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png"></a><br>本作品采用 <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.zh">署名-非商业性使用-禁止演绎 4.0 国际</a> 进行许可。
