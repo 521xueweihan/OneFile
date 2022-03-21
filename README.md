@@ -32,10 +32,10 @@ OneFile 汇集了仅一个文件，好玩的开源项目。这里有游戏、编
 | [si78c](https://github.com/loadzero/si78c) | C | 用 C 语言实现的《太空侵略者》命令行游戏 | [loadzero](https://github.com/loadzero) | [源码](https://github.com/521xueweihan/OneFile/blob/main/src/c/si78c.c) |
 | [minilisp](https://github.com/rui314/minilisp) | C | 用 C 语言写的 Lisp 解释器。实现了整数、符... | [rui314](https://github.com/rui314) | [源码](https://github.com/521xueweihan/OneFile/blob/main/src/c/minilisp.c) |
 | [threadpoll](https://github.com/progschj/ThreadPool) | C++ | 一个简单的 C++11 线程池实现 | [progschj](https://github.com/progschj) | [源码](https://github.com/521xueweihan/OneFile/blob/main/src/cplusplus/threadpoll.h) |
-| minesweeper | HTML | 扫雷游戏 | [terrymckay](https://github.com/terrymckay) | [源码](https://github.com/521xueweihan/OneFile/blob/main/src/html/minesweeper.html) |
-| 2048 | HTML | 2048 游戏 | [bxm0927](https://github.com/bxm0927) | [源码](https://github.com/521xueweihan/OneFile/blob/main/src/html/2048.html) |
-| ascii-cam | HTML | 把视频图像转成 ascii	 | [iveseenthedark](https://github.com/iveseenthedark) | [源码](https://github.com/521xueweihan/OneFile/blob/main/src/html/ascii-cam.html) |
-| [looptap](https://github.com/vasanthv/looptap) | HTML | 消磨时间的小游戏，把球停在有颜色区域 | [vasanthv](https://github.com/vasanthv) | [源码](https://github.com/521xueweihan/OneFile/blob/main/src/vue/looptap.html) |
+| minesweeper | HTML | 扫雷游戏 | [terrymckay](https://github.com/terrymckay) | [试玩](https://hellogithub.com/onfile/code/e235d1d133134aea93ca6cdf2ed4fc5d) |
+| 2048 | HTML | 2048 游戏 | [bxm0927](https://github.com/bxm0927) | [试玩](https://hellogithub.com/onfile/code/8d627fe4cfa540b19dcd04d4327cf26c) |
+| ascii-cam | HTML | 把视频图像转成 ascii	 | [iveseenthedark](https://github.com/iveseenthedark) | [试玩](https://hellogithub.com/onfile/code/126093303b6b414dbab9d623c957fdd4) |
+| [looptap](https://github.com/vasanthv/looptap) | HTML | 消磨时间的小游戏，把球停在有颜色区域 | [vasanthv](https://github.com/vasanthv) | [试玩](https://hellogithub.com/onfile/code/cc759276aefe4bad87ac259940042581) |
 | [the-super-tiny-compiler](https://github.com/jamiebuilds/the-super-tiny-compiler) | JavaScript | 人人都能看懂的微型编译器 | [jamiebuilds](https://github.com/jamiebuilds) | [源码](https://github.com/521xueweihan/OneFile/blob/main/src/javascript/the-super-tiny-compiler.js) |
 | [pico](https://github.com/nenadmarkus/picojs) | JavaScript | 200 行实现的面部识别库 | [nenadmarkus](https://github.com/nenadmarkus) | [试玩](https://nenadmarkus.com/p/picojs-intro/demo/) |
 | [parsedown](https://github.com/erusev/parsedown) | PHP | 一个小而美的 PHP 的 Markdown 解析库 | [erusev](https://github.com/erusev) | [源码](https://github.com/521xueweihan/OneFile/blob/main/src/php/parsedown.php) |
