@@ -18,7 +18,7 @@
 
     <title>Looptap - 消磨时间的小游戏</title>
 
-    <script src="https://looptap.vasanthv.com/vue.min.js"></script>
+    <script src="https://hellogithub.com/static/vue.min.js"></script>
 
     <style>
         html,
@@ -158,7 +158,7 @@
         </svg>
 
         <a id="shareBtn"
-            v-bind:href="'https://service.weibo.com/share/share.php?url=https%3A%2F%2Fone.hellogithub.com%2Fvue%2Flooptap.html&title=%E6%88%91%E7%9A%84%E5%88%86%E6%95%B0%EF%BC%9A'+score+'%EF%BC%8CLooptap%20-%20%E6%B6%88%E7%A3%A8%E6%97%B6%E9%97%B4%E7%9A%84%E5%B0%8F%E6%B8%B8%E6%88%8F%E3%80%82'"
+            v-bind:href="'https://service.weibo.com/share/share.php?url=https%3A%2F%2Fhellogithub.com%2Fonfile%2Fcode%2Fcc759276aefe4bad87ac259940042581&title=%E6%88%91%E7%9A%84%E5%88%86%E6%95%B0%EF%BC%9A'+score+'%EF%BC%8CLooptap%20-%20%E6%B6%88%E7%A3%A8%E6%97%B6%E9%97%B4%E7%9A%84%E5%B0%8F%E6%B8%B8%E6%88%8F%E3%80%82'"
             v-if="['stopped', 'started'].includes(state)" target="_blank"
             v-bind:class="state === 'started' ? 'hide' : ''">
             分享你的分数
@@ -291,9 +291,6 @@
         };
     }
 
-    if ("serviceWorker" in navigator) {
-        navigator.serviceWorker.register("/sw.js");
-    }
 
 </script>
 
