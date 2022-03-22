@@ -12,19 +12,25 @@
   <a href="https://weibo.com/hellogithub"><img src="https://img.shields.io/badge/%E6%96%B0%E6%B5%AA-Weibo-red.svg?style=popout-square" alt="Sina Weibo"></a>
 </p>
 
-你是否还记得刚学会编程基础，想动手写个实用工具，但却发现还要继续学习数据库、框架、Linux 等知识？又或者看到一个好玩的开源项目结果卡在了部署环境、安装依赖的步骤上？
+你是否记得：刚学完编程基础那会儿特别想写个东西，但动起手来却发现到处碰壁？
 
-有没有一个文件、运行简单、一看就懂的开源项目呢？
+你是否发现：一个好玩的开源项目，结果卡在了部署环境、安装依赖上？最后，"含恨而终"！
+
+你是否在寻找：一个文件、运行简单、一看就懂的开源项目呢？
 
 ## 介绍
 
-OneFile 汇集了仅一个文件，好玩的开源项目。这里有游戏、编译器、服务器、工具、实用库等，它们运行简单甚至**复制就能跑**。
+OneFile 汇集了仅一个文件，好玩的开源项目。
 
-[加入 OneFile 编程挑战](https://github.com/521xueweihan/OneFile/blob/main/doc/join.md) 参与开源就是如此简单：写你感兴趣的代码，用一个文件惊艳所有人！
+这里有游戏、编译器、服务器、工具、实用库等，它们简单有趣甚至**复制代码就能跑**。
 
-如果让你只用一个文件展示“平生所学”，编程语言不限！你会交出什么样的作品呢？
+[加入一个文件的编程挑战](https://github.com/521xueweihan/OneFile/blob/main/doc/join.md)：写你感兴趣的代码，用一个文件惊艳所有人！
+
+如果只用一个文件展示“平生所学”，编程语言不限！你会交出什么样的作品呢？
 
 ## 项目
+
+[轻点](https://hellogithub.yuque.com/forms/share/4f0bf06b-2991-4f7e-a860-5b76337b7b5b) 即可提交项目，开启开源之旅。
 
 | 名称 | 语言 | 描述 | 作者 | 操作 |
 | ------- | ----- | ------------ | ------ | --------- |
@@ -45,13 +51,12 @@ OneFile 汇集了仅一个文件，好玩的开源项目。这里有游戏、编
 | [neofetch](https://github.com/dylanaraps/neofetch) | Shell | 展示操作系统信息的命令行工具，支持 100 多种操... | [dylanaraps](https://github.com/dylanaraps) | [源码](https://github.com/521xueweihan/OneFile/blob/main/src/shell/neofetch) |
 
 
-加入挑战十分简单，[轻点](https://hellogithub.yuque.com/forms/share/4f0bf06b-2991-4f7e-a860-5b76337b7b5b) 即可提交项目。
 
 ## 更新计划
 
 - 增加投票
 - 自动化流程
-- 增设奖金
+- 增设奖金（赞助请<a href="mailto:595666367@qq.com">联系我</a>）
 - 英文描述
 
 ## 声明
