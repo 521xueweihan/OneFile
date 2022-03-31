@@ -49,7 +49,7 @@ OneFile 汇集了仅一个文件，好玩的开源项目。
 | [py2sec](https://github.com/cckuailong/py2sec) | Python | 一款轻量级跨平台 Python “加密”、加速的脚... | [cckuailong](https://github.com/cckuailong) | [源码](https://github.com/521xueweihan/OneFile/blob/main/src/python/py2sec.py) |
 | [tomato-clock](https://github.com/coolcode/tomato-clock) | Python | Python 写的命令行番茄工作法定时器 | [coolcode](https://github.com/coolcode) | [源码](https://github.com/521xueweihan/OneFile/blob/main/src/python/tomato-clock.py) |
 | [share](https://github.com/beavailable/share) | Python | 基于 HTTP 协议的文件分享工具 | [beavailable](https://github.com/beavailable) | [源码](https://github.com/521xueweihan/OneFile/blob/main/src/python/share.py) |
-| mine-sweeper | Python | 扫雷游戏 | child | [源码](https://github.com/521xueweihan/OneFile/blob/main/src/python/mine-sweeper.py) |
+| web-server | Python | 一个简单的 Web 框架 | [521xueweihan](https://github.com/521xueweihan) | [源码](https://github.com/521xueweihan/OneFile/blob/main/src/python/web-server.py) |
 | [neofetch](https://github.com/dylanaraps/neofetch) | Shell | 展示操作系统信息的命令行工具，支持 100 多种操... | [dylanaraps](https://github.com/dylanaraps) | [源码](https://github.com/521xueweihan/OneFile/blob/main/src/shell/neofetch) |
 
 
