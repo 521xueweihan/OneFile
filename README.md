@@ -12,45 +12,37 @@
   <a href="https://weibo.com/hellogithub"><img src="https://img.shields.io/badge/%E6%96%B0%E6%B5%AA-Weibo-red.svg?style=popout-square" alt="Sina Weibo"></a>
 </p>
 
-你是否记得：刚学完编程基础那会儿特别想写个东西，但动起手来却发现到处碰壁？
-
-你是否发现：一个好玩的开源项目，结果卡在了部署环境、安装依赖上？最后，"含恨而终"！
-
 你是否在寻找：一个文件、运行简单、一看就懂的开源项目呢？
 
 ## 介绍
 
-OneFile 汇集了仅一个文件，好玩的开源项目。
+OneFile 汇集了仅一个文件容易与行，而且好玩的开源项目。
 
-这里有游戏、编译器、服务器、工具、实用库等，它们简单有趣甚至**复制代码就能跑**。
-
-[加入一个文件的编程挑战](https://github.com/521xueweihan/OneFile/blob/main/doc/join.md)：写你感兴趣的代码，用一个文件惊艳所有人！
-
-如果只用一个文件展示“平生所学”，编程语言不限！你会交出什么样的作品呢？
+这些项目包括游戏、编译器、服务器、工具、实用库等，它们简单有趣**复制代码就能跑**。
 
 ## 项目
 
-[轻点](https://hellogithub.yuque.com/forms/share/4f0bf06b-2991-4f7e-a860-5b76337b7b5b) 即可提交项目，开启开源之旅。
+[加入一个文件的编程挑战](https://github.com/521xueweihan/OneFile/blob/main/doc/join.md)，写你感兴趣的代码，用一个文件惊艳所有人！[点击](https://hellogithub.yuque.com/forms/share/4f0bf06b-2991-4f7e-a860-5b76337b7b5b) 即可提交项目，开启开源之旅。
 
-| 名称 | 语言 | 描述 | 作者 | 操作 |
-| ------- | ----- | ------------ | ------ | --------- |
-| [tinyhttpd](https://github.com/EZLippi/Tinyhttpd) | C | 不到 500 行的超轻量型 HTTP Server... | J. David Blackstone | [源码](https://github.com/521xueweihan/OneFile/blob/main/src/c/tinyhttpd.c) |
-| [si78c](https://github.com/loadzero/si78c) | C | 用 C 语言实现的《太空侵略者》命令行游戏 | [loadzero](https://github.com/loadzero) | [源码](https://github.com/521xueweihan/OneFile/blob/main/src/c/si78c.c) |
-| [minilisp](https://github.com/rui314/minilisp) | C | 用 C 语言写的 Lisp 解释器。实现了整数、符... | [rui314](https://github.com/rui314) | [源码](https://github.com/521xueweihan/OneFile/blob/main/src/c/minilisp.c) |
-| [threadpoll](https://github.com/progschj/ThreadPool) | C++ | 一个简单的 C++11 线程池实现 | [progschj](https://github.com/progschj) | [源码](https://github.com/521xueweihan/OneFile/blob/main/src/cplusplus/threadpoll.h) |
-| minesweeper | HTML | 扫雷游戏 | [terrymckay](https://github.com/terrymckay) | [试玩](https://hellogithub.com/onefile/code/e235d1d133134aea93ca6cdf2ed4fc5d) |
-| 2048 | HTML | 2048 游戏 | [bxm0927](https://github.com/bxm0927) | [试玩](https://hellogithub.com/onefile/code/8d627fe4cfa540b19dcd04d4327cf26c) |
-| ascii-cam | HTML | 把视频图像转成 ascii	 | [iveseenthedark](https://github.com/iveseenthedark) | [试玩](https://hellogithub.com/onefile/code/126093303b6b414dbab9d623c957fdd4) |
-| [looptap](https://github.com/vasanthv/looptap) | HTML | 消磨时间的小游戏，把球停在有颜色区域 | [vasanthv](https://github.com/vasanthv) | [试玩](https://hellogithub.com/onefile/code/cc759276aefe4bad87ac259940042581) |
-| [the-super-tiny-compiler](https://github.com/jamiebuilds/the-super-tiny-compiler) | JavaScript | 人人都能看懂的微型编译器 | [jamiebuilds](https://github.com/jamiebuilds) | [源码](https://github.com/521xueweihan/OneFile/blob/main/src/javascript/the-super-tiny-compiler.js) |
-| [pico](https://github.com/nenadmarkus/picojs) | JavaScript | 200 行实现的面部识别库 | [nenadmarkus](https://github.com/nenadmarkus) | [试玩](https://nenadmarkus.com/p/picojs-intro/demo/) |
-| [parsedown](https://github.com/erusev/parsedown) | PHP | 一个小而美的 PHP 的 Markdown 解析库 | [erusev](https://github.com/erusev) | [源码](https://github.com/521xueweihan/OneFile/blob/main/src/php/parsedown.php) |
-| [httpstat](https://github.com/reorx/httpstat) | Python | 用更优雅的方式展示 curl 结果的命令行工具 | [reorx](https://github.com/reorx) | [源码](https://github.com/521xueweihan/OneFile/blob/main/src/python/httpstat.py) |
-| [py2sec](https://github.com/cckuailong/py2sec) | Python | 一款轻量级跨平台 Python “加密”、加速的脚... | [cckuailong](https://github.com/cckuailong) | [源码](https://github.com/521xueweihan/OneFile/blob/main/src/python/py2sec.py) |
-| [tomato-clock](https://github.com/coolcode/tomato-clock) | Python | Python 写的命令行番茄工作法定时器 | [coolcode](https://github.com/coolcode) | [源码](https://github.com/521xueweihan/OneFile/blob/main/src/python/tomato-clock.py) |
-| [share](https://github.com/beavailable/share) | Python | 基于 HTTP 协议的文件分享工具 | [beavailable](https://github.com/beavailable) | [源码](https://github.com/521xueweihan/OneFile/blob/main/src/python/share.py) |
-| web-server | Python | 一个简单的 Web 框架 | [521xueweihan](https://github.com/521xueweihan) | [源码](https://github.com/521xueweihan/OneFile/blob/main/src/python/web-server.py) |
-| [neofetch](https://github.com/dylanaraps/neofetch) | Shell | 展示操作系统信息的命令行工具，支持 100 多种操... | [dylanaraps](https://github.com/dylanaraps) | [源码](https://github.com/521xueweihan/OneFile/blob/main/src/shell/neofetch) |
+| 名称 | 语言 | 描述 | 操作 |
+| ------- | ----- | ------------ | --------- |
+| [tinyhttpd](https://github.com/EZLippi/Tinyhttpd) | C | 不到 500 行的超轻量型 HTTP Server...| [源码](https://hellogithub.com/onefile/code/7e574fc7d58d4fae950a95d7bdb87d09) |
+| [si78c](https://github.com/loadzero/si78c) | C | 用 C 语言实现的《太空侵略者》命令行游戏 | [源码](https://hellogithub.com/onefile/code/cb8e4fbc5a174664ac325a521ee6d02f) |
+| [minilisp](https://github.com/rui314/minilisp) | C | 用 C 语言写的 Lisp 解释器。实现了整数、符... | [源码](https://hellogithub.com/onefile/code/9a51afad2a7e49fb8dd79136866674f4) |
+| [threadpoll](https://github.com/progschj/ThreadPool) | C++ | 一个简单的 C++11 线程池实现 | [源码](https://hellogithub.com/onefile/code/d0c3498b528f485996c9dc5dc4dfa4cb) |
+| [minesweeper](https://github.com/521xueweihan/OneFile/blob/main/src/html/minesweeper.html) | HTML | 扫雷游戏 | [试玩](https://hellogithub.com/onefile/code/e235d1d133134aea93ca6cdf2ed4fc5d) |
+| [2048](https://github.com/521xueweihan/OneFile/blob/main/src/html/2048.html) | HTML | 2048 游戏 | [试玩](https://hellogithub.com/onefile/code/8d627fe4cfa540b19dcd04d4327cf26c) |
+| [ascii-cam](https://github.com/521xueweihan/OneFile/blob/main/src/html/ascii-cam.html) | HTML | 把视频图像转成 ascii | [试玩](https://hellogithub.com/onefile/code/126093303b6b414dbab9d623c957fdd4) |
+| [looptap](https://github.com/vasanthv/looptap) | HTML | 消磨时间的小游戏，把球停在有颜色区域 | [试玩](https://hellogithub.com/onefile/code/cc759276aefe4bad87ac259940042581) |
+| [the-super-tiny-compiler](https://github.com/jamiebuilds/the-super-tiny-compiler) | JavaScript | 人人都能看懂的微型编译器 | [源码](https://hellogithub.com/onefile/code/cc759276aefe4bad87ac259940042581) |
+| [pico](https://github.com/nenadmarkus/picojs) | JavaScript | 200 行实现的面部识别库 | [源码](https://hellogithub.com/onefile/code/2bcbe06dbcbb48078f2307379068e6e6) |
+| [parsedown](https://github.com/erusev/parsedown) | PHP | 一个小而美的 PHP 的 Markdown 解析库 | [源码](https://hellogithub.com/onefile/code/12026fcae79e4cc08793246b5b55817a) |
+| [httpstat](https://github.com/reorx/httpstat) | Python | 用更优雅的方式展示 curl 结果的命令行工具 | [源码](https://hellogithub.com/onefile/code/7c6847a33f1245608ae9abf4e59a03b8) |
+| [py2sec](https://github.com/cckuailong/py2sec) | Python | 一款轻量级跨平台 Python “加密”、加速的脚... | [源码](https://hellogithub.com/onefile/code/3e608cc323e84f15887461f1d3e71677) |
+| [tomato-clock](https://github.com/coolcode/tomato-clock) | Python | Python 写的命令行番茄工作法定时器 | [源码](https://hellogithub.com/onefile/code/05d586dfd389413da47ffdbc806196cc) |
+| [share](https://github.com/beavailable/share) | Python | 基于 HTTP 协议的文件分享工具 | [源码](https://hellogithub.com/onefile/code/9b3c14d37aa5434182244de6ad947b97) |
+| [web-server](https://github.com/521xueweihan/OneFile/blob/main/src/python/web-server.py) | Python | 一个简单的 Web 框架 | [源码](https://hellogithub.com/onefile/code/96c0137112cf4d15af8008f99d793a1a) |
+| [neofetch](https://github.com/dylanaraps/neofetch) | Shell | 展示操作系统信息的命令行工具，支持 100 多种操... | [源码](https://hellogithub.com/onefile/code/689c4982fe794ebbafd4c63d360829a8) |
 
 
 
