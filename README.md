@@ -12,17 +12,14 @@
   <a href="https://weibo.com/hellogithub"><img src="https://img.shields.io/badge/%E6%96%B0%E6%B5%AA-Weibo-red.svg?style=popout-square" alt="Sina Weibo"></a>
 </p>
 
-你是否在寻找：一个文件、运行简单、一看就懂的开源项目呢？
 
 ## 介绍
 
-OneFile 汇集了仅一个文件容易运行，而且好玩的开源项目。
-
-这些项目包括游戏、编译器、服务器、工具、实用库等，它们简单有趣**复制代码就能跑**。
+OneFile 汇集了一个文件、运行简单、一看就懂的开源项目。包括游戏、编译器、服务器、工具、实用库等，它们简单有趣**复制代码就能跑**，能够让你瞬间找到编程的乐趣、程序运行成功的快乐！
 
 ## 项目
 
-[加入一个文件的编程挑战](https://github.com/521xueweihan/OneFile/blob/main/doc/join.md)，写你感兴趣的代码，用一个文件惊艳所有人！[点击](https://hellogithub.yuque.com/forms/share/4f0bf06b-2991-4f7e-a860-5b76337b7b5b) 即可提交项目，开启开源之旅。
+[点击加入](https://github.com/521xueweihan/OneFile/blob/main/doc/join.md) OneFile 编程挑战，写你感兴趣的代码。参与开源只需一个文件，[点击](https://hellogithub.yuque.com/forms/share/4f0bf06b-2991-4f7e-a860-5b76337b7b5b) 提交你的代码吧。
 
 | 名称 | 语言 | 描述 | 操作 |
 | ------- | ----- | ------------ | --------- |
@@ -42,9 +39,6 @@ OneFile 汇集了仅一个文件容易运行，而且好玩的开源项目。
 | [tomato-clock](https://github.com/coolcode/tomato-clock) | Python | Python 写的命令行番茄工作法定时器 | [源码](https://hellogithub.com/onefile/code/05d586dfd389413da47ffdbc806196cc) |
 | [share](https://github.com/beavailable/share) | Python | 基于 HTTP 协议的文件分享工具 | [源码](https://hellogithub.com/onefile/code/9b3c14d37aa5434182244de6ad947b97) |
 | [web-server](https://github.com/521xueweihan/OneFile/blob/main/src/python/web-server.py) | Python | 一个简单的 Web 框架 | [源码](https://hellogithub.com/onefile/code/96c0137112cf4d15af8008f99d793a1a) |
-| [neofetch](https://github.com/dylanaraps/neofetch) | Shell | 展示操作系统信息的命令行工具，支持 100 多种操... | [源码](https://hellogithub.com/onefile/code/689c4982fe794ebbafd4c63d360829a8) |
-
-
 
 ## 更新计划
 
