@@ -31,7 +31,7 @@ OneFile 汇集了一个文件、运行简单、一看就懂的开源项目。包
 | [2048](https://github.com/521xueweihan/OneFile/blob/main/src/html/2048.html) | HTML | 2048 游戏 | [试玩](https://hellogithub.com/onefile/code/8d627fe4cfa540b19dcd04d4327cf26c) |
 | [ascii-cam](https://github.com/521xueweihan/OneFile/blob/main/src/html/ascii-cam.html) | HTML | 把视频图像转成 ascii | [试玩](https://hellogithub.com/onefile/code/126093303b6b414dbab9d623c957fdd4) |
 | [looptap](https://github.com/vasanthv/looptap) | HTML | 消磨时间的小游戏，把球停在有颜色区域 | [试玩](https://hellogithub.com/onefile/code/cc759276aefe4bad87ac259940042581) |
-| [the-super-tiny-compiler](https://github.com/jamiebuilds/the-super-tiny-compiler) | JavaScript | 人人都能看懂的微型编译器 | [源码](https://hellogithub.com/onefile/code/cc759276aefe4bad87ac259940042581) |
+| [the-super-tiny-compiler](https://github.com/jamiebuilds/the-super-tiny-compiler) | JavaScript | 人人都能看懂的微型编译器 | [源码](https://hellogithub.com/onefile/code/b4c7642fae544a0f8e7bc8e4d9971d52) |
 | [pico](https://github.com/nenadmarkus/picojs) | JavaScript | 200 行实现的面部识别库 | [源码](https://hellogithub.com/onefile/code/2bcbe06dbcbb48078f2307379068e6e6) |
 | [parsedown](https://github.com/erusev/parsedown) | PHP | 一个小而美的 PHP 的 Markdown 解析库 | [源码](https://hellogithub.com/onefile/code/12026fcae79e4cc08793246b5b55817a) |
 | [httpstat](https://github.com/reorx/httpstat) | Python | 用更优雅的方式展示 curl 结果的命令行工具 | [源码](https://hellogithub.com/onefile/code/7c6847a33f1245608ae9abf4e59a03b8) |
