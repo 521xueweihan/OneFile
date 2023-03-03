@@ -1,0 +1,316 @@
+<html>
+  <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://img.hellogithub.com/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="android-chrome"
+      sizes="192x192"
+      href="https://img.hellogithub.com/favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="android-chrome"
+      sizes="512x512"
+      href="https://img.hellogithub.com/favicon/android-chrome-512x512.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://img.hellogithub.com/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://img.hellogithub.com/favicon/favicon-16x16.png"
+    />
+    <link rel="icon" href="https://img.hellogithub.com/favicon/favicon.ico" />
+    <title>数字华容道</title>
+    <style>
+      ul {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 1px solid #000;
+        padding: 0;
+      }
+      li {
+        position: absolute;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 70px;
+        border: 1px solid #000;
+        box-sizing: border-box;
+        font-size: 18px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <select id="level">
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9">9</option>
+    </select>
+    <ul id="map"></ul>
+    <script>
+      function generateRandomArr(level) {
+        const length = level * level - 1
+        return Array.from({ length }, (_, index) => index + 1).sort(
+          () => Math.random() - 0.5
+        )
+      }
+      function isOK(arr) {
+        return arr.every((item, index) => item === index + 1)
+      }
+      function isEven(val) {
+        return val % 2 === 0
+      }
+      function isNoSolution(arr, level) {
+        let count = 0
+        for (let i = 1; i < arr.length; i++) {
+          for (let j = 0; j < i; j++) {
+            if (arr[j] < arr[i]) {
+              count++
+            }
+          }
+        }
+        return isEven(level) === isEven(count)
+      }
+      function getInitArr(level) {
+        let arr = generateRandomArr(level)
+        while (isOK(arr) || isNoSolution(arr, level)) {
+          arr = generateRandomArr(level)
+        }
+        return arr
+      }
+      function arr2DArr(arr, level) {
+        const res = []
+        for (let i = 0; i < level; i++) {
+          let item = []
+          for (let j = 0; j < level; j++) {
+            item.push(arr[i * level + j])
+          }
+          res.push(item)
+        }
+        return res
+      }
+      function resizeMap() {
+        map.style.width = 70 * level + "px"
+        map.style.height = 70 * level + "px"
+      }
+      function init() {
+        resizeMap()
+        const initArr = arr2DArr(getInitArr(level), level)
+        map.innerHTML = ""
+        for (let i = 0; i < initArr.length; i++) {
+          for (let j = 0; j < initArr[0].length; j++) {
+            const li = document.createElement("li")
+            const data = extend({}, NOMOVE)
+            data["value"] = initArr[i][j]
+            data["row"] = i
+            data["col"] = j
+            if (i === level - 1 && j === level - 2) {
+              data["right"] = true
+            }
+            if (i === level - 2 && j === level - 1) {
+              data["down"] = true
+            }
+            li.setAttribute(
+              "style",
+              `top: ${data["row"] * 70}px; left: ${data["col"] * 70}px`
+            )
+            if (initArr[i][j] === undefined) {
+              data["value"] = 0
+            }
+            li.innerHTML = data["value"] || ""
+            li.setAttribute("data-info", JSON.stringify(data))
+            map.appendChild(li)
+          }
+        }
+        hanleClick()
+        hanleKeyDown()
+      }
+      const extend = Object.assign
+      const NOMOVE = {
+        up: false,
+        down: false,
+        left: false,
+        right: false,
+      }
+      const map = document.getElementById("map")
+      let level = 3
+      init()
+      document.getElementById("level").onchange = function (e) {
+        level = this.value
+        init()
+      }
+      function getLiELs() {
+        return Array.from(document.getElementsByTagName("li"))
+      }
+      function hanleClick() {
+        liEls = getLiELs()
+        liEls.forEach((el) => {
+          el.onclick = function (e) {
+            dataArr = liEls.map((item) => {
+              return JSON.parse(item.getAttribute("data-info"))
+            })
+            const target = JSON.parse(e.target.getAttribute("data-info"))
+            if (target) {
+              const { up, down, left, right } = target
+              let res = null
+              if (up) {
+                res = changePos(dataArr, "up", level)
+              }
+              if (down) {
+                res = changePos(dataArr, "down", level)
+              }
+              if (left) {
+                res = changePos(dataArr, "left", level)
+              }
+              if (right) {
+                res = changePos(dataArr, "right", level)
+              }
+              if (res && res.length > 0) {
+                dataArr = res
+                isSuccess(dataArr)
+              }
+              resolvePos(dataArr)
+            }
+          }
+        })
+      }
+      function hanleKeyDown() {
+        window.addEventListener("keydown", function ({ code }) {
+          dataArr = getLiELs().map((item) => {
+            return JSON.parse(item.getAttribute("data-info"))
+          })
+          let res = null
+          switch (code) {
+            case "ArrowUp":
+              res = changePos(dataArr, "up", level)
+              break
+            case "ArrowDown":
+              res = changePos(dataArr, "down", level)
+              break
+            case "ArrowLeft":
+              res = changePos(dataArr, "left", level)
+              break
+            case "ArrowRight":
+              res = changePos(dataArr, "right", level)
+              break
+          }
+          if (res && res.length > 0) {
+            dataArr = res
+            isSuccess(dataArr)
+          }
+          resolvePos(dataArr)
+        })
+      }
+      function isSuccess(arr) {
+        if (isOK(arr.map((item) => item.value).slice(0, -1))) {
+          setTimeout(function () {
+            window.alert("success")
+          })
+        }
+      }
+      function resolvePos(arr) {
+        liEls.forEach((li, index) => {
+          li.innerHTML = dataArr[index]["value"] || ""
+          li.setAttribute(
+            "style",
+            `top: ${dataArr[index]["row"] * 70}px; left: ${
+              dataArr[index]["col"] * 70
+            }px`
+          )
+          li.setAttribute("data-info", JSON.stringify(dataArr[index]))
+        })
+      }
+      function resetStutas(arr) {
+        arr.forEach((item) => extend(item, NOMOVE))
+      }
+      function isEffectaivePos(row, col, level) {
+        if (row < 0 || col < 0 || row > level - 1 || col > level - 1) {
+          return false
+        }
+        return true
+      }
+      function getPos(row, col, level) {
+        if (isEffectaivePos(row, col, level)) {
+          return row * level + col
+        }
+        return 0
+      }
+      function resolveNewStutas(arr, empty, level) {
+        const { row, col } = empty
+        if (isEffectaivePos(row - 1, col, level)) {
+          const pos = getPos(row - 1, col, level)
+          arr[pos]["down"] = true
+        }
+        if (isEffectaivePos(row + 1, col, level)) {
+          const pos = getPos(row + 1, col, level)
+          arr[pos]["up"] = true
+        }
+        if (isEffectaivePos(row, col - 1, level)) {
+          const pos = getPos(row, col - 1, level)
+          arr[pos]["right"] = true
+        }
+        if (isEffectaivePos(row, col + 1, level)) {
+          const pos = getPos(row, col + 1, level)
+          arr[pos]["left"] = true
+        }
+      }
+      function changePos(arr, direction, level) {
+        const targetItem = arr.find((item) => {
+          return item[direction]
+        })
+        if (!targetItem) return arr
+        const emptyItem = arr.find((item) => item.value === 0)
+        if (!emptyItem) return arr
+        switch (direction) {
+          case "up":
+            targetItem["row"] = targetItem["row"] - 1
+            emptyItem["row"] = emptyItem["row"] + 1
+            break
+          case "down":
+            targetItem["row"] = targetItem["row"] + 1
+            emptyItem["row"] = emptyItem["row"] - 1
+            break
+          case "left":
+            targetItem["col"] = targetItem["col"] - 1
+            emptyItem["col"] = emptyItem["col"] + 1
+            break
+          case "right":
+            targetItem["col"] = targetItem["col"] + 1
+            emptyItem["col"] = emptyItem["col"] - 1
+            break
+        }
+        const targetItemPos = getPos(
+          targetItem["row"],
+          targetItem["col"],
+          level
+        )
+        const emptyItemPos = getPos(emptyItem["row"], emptyItem["col"], level)
+
+        arr[targetItemPos] = targetItem
+        arr[emptyItemPos] = emptyItem
+
+        resetStutas(arr)
+        resolveNewStutas(arr, arr[emptyItemPos], level)
+
+        return arr
+      }
+    </script>
+  </body>
+</html>
