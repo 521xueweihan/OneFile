@@ -1,0 +1,157 @@
+<html>
+  <head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://img.hellogithub.com/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="android-chrome"
+      sizes="192x192"
+      href="https://img.hellogithub.com/favicon/android-chrome-192x192.png"
+    />
+    <link
+      rel="android-chrome"
+      sizes="512x512"
+      href="https://img.hellogithub.com/favicon/android-chrome-512x512.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://img.hellogithub.com/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://img.hellogithub.com/favicon/favicon-16x16.png"
+    />
+    <link rel="icon" href="https://img.hellogithub.com/favicon/favicon.ico" />
+    <title>Tic-Tac-Toe</title>
+    <style>
+      ul {
+        display: flex;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 210px;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 0;
+      }
+      li {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 70px;
+        box-sizing: border-box;
+        font-size: 18px;
+        cursor: pointer;
+      }
+      li:nth-child(1) {
+        border-right: 1px solid #000;
+        border-bottom: 1px solid #000;
+        transform: translate(1px, 1px);
+      }
+      li:nth-child(2) {
+        transform: translate(0, 1px);
+      }
+      li:nth-child(3) {
+        border-left: 1px solid #000;
+        border-bottom: 1px solid #000;
+        transform: translate(-1px, 1px);
+      }
+      li:nth-child(4) {
+        transform: translate(1px, 0);
+      }
+      li:nth-child(5) {
+        border: 1px solid #000;
+      }
+      li:nth-child(6) {
+        transform: translate(-1px, 0);
+      }
+      li:nth-child(7) {
+        border-top: 1px solid #000;
+        border-right: 1px solid #000;
+        transform: translate(1px, -1px);
+      }
+      li:nth-child(8) {
+        transform: translate(0, -1px);
+      }
+      li:nth-child(9) {
+        border-top: 1px solid #000;
+        border-left: 1px solid #000;
+        transform: translate(-1px, -1px);
+      }
+      .highlight {
+        background: green;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="board">
+      <li class="square"></li>
+      <li class="square"></li>
+      <li class="square"></li>
+      <li class="square"></li>
+      <li class="square"></li>
+      <li class="square"></li>
+      <li class="square"></li>
+      <li class="square"></li>
+      <li class="square"></li>
+    </ul>
+    <script>
+      const squares = Array.from({ length: 9 }, () => null)
+      let moves = 0
+      const squareEles = Array.from(document.getElementsByClassName("square"))
+      squareEles.forEach((ele, index) => {
+        ele.addEventListener("click", (e) => {
+          const { winner } = calculateWinner(squares)
+          if (squares[index] || winner) return
+          if (moves % 2 === 0) {
+            squares[index] = "X"
+          } else {
+            squares[index] = "O"
+          }
+          ele.innerHTML = squares[index]
+          const { line } = calculateWinner(squares)
+          if (line.length > 0) {
+            line.forEach((idx) => {
+              squareEles[idx].className = "square highlight"
+            })
+            return
+          }
+          moves++
+        })
+      })
+
+      function calculateWinner(squares) {
+        const lines = [
+          [0, 1, 2],
+          [3, 4, 5],
+          [6, 7, 8],
+          [0, 3, 6],
+          [1, 4, 7],
+          [2, 5, 8],
+          [0, 4, 8],
+          [2, 4, 6],
+        ]
+        for (let i = 0; i < lines.length; i++) {
+          const [a, b, c] = lines[i]
+          if (
+            squares[a] &&
+            squares[a] === squares[b] &&
+            squares[a] === squares[c]
+          ) {
+            return { winner: true, line: lines[i] }
+          }
+        }
+        return { winner: false, line: [] }
+      }
+    </script>
+  </body>
+</html>
