@@ -29,6 +29,7 @@ OneFile 汇集了一个文件、运行简单、一看就懂的开源项目。包
 | [cJSON](https://github.com/DaveGamble/cJSON) | C | 标准 C(C89) 实现的超轻量的 JSON 解析... | [源码](https://github.com/521xueweihan/OneFile/blob/main/src/cJSON.c) |
 | [filedb](https://github.com/LiuYuguang/supersimplefiledatabase) | C | 基于B-tree 的文件数据库 | [源码](https://github.com/521xueweihan/OneFile/blob/main/src/filedb.c) |
 | [threadpoll](https://github.com/progschj/ThreadPool) | C++ | 一个简单的 C++11 线程池实现 | [源码](https://github.com/521xueweihan/OneFile/blob/main/src/threadpoll.h) |
+| [「1A2B」➜「4A5B」](https://github.com/ChenZhu-Xie/1A2B_3C_4A5B) | C++ |「游戏」通关猜 4 位数密码后，可以猜 1~9 位数 ！| [源码](https://github.com/ChenZhu-Xie/1A2B_3C_4A5B/blob/master/Xcz%20-%20%E4%BB%8E1%E9%98%B6%E5%88%B09%E9%98%B6%E7%9A%8410%E7%BB%B4%E8%A7%A3%E5%AF%86%E6%B8%B8%E6%88%8F_v1.03_Beta.cpp) |
 | [minesweeper](https://github.com/521xueweihan/OneFile/blob/main/src/html/minesweeper.html) | HTML | 扫雷游戏 | [试玩](https://hellogithub.com/onefile/demo/e235d1d133134aea93ca6cdf2ed4fc5d.html) |
 | [2048](https://github.com/521xueweihan/OneFile/blob/main/src/html/2048.html) | HTML | 2048 游戏 | [试玩](https://hellogithub.com/onefile/demo/8d627fe4cfa540b19dcd04d4327cf26c.html) |
 | [ascii-cam](https://github.com/521xueweihan/OneFile/blob/main/src/html/ascii-cam.html) | HTML | 把视频图像转成 ascii	 | [试玩](https://hellogithub.com/onefile/demo/126093303b6b414dbab9d623c957fdd4.html) |
