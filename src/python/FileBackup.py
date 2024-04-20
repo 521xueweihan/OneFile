@@ -1,3 +1,9 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
+# ====== File Backup =======
+# ./FileBackup.py [directory] [timeEachSnapshotInSeconds]
+
 import time
 import os
 import watchdog
